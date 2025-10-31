@@ -1,13 +1,10 @@
-# Programa: Estatísticas de um grupo de pessoas
-
-# Listas para armazenar dados
 nomes = []
 alturas = []
 sexos = []
 filhos = []
 
 while True:
-    print("\n--- Cadastro de Pessoa ---")
+    print("\nCadastro de Pessoa")
     nome = input("Nome: ")
     altura = float(input("Altura (em metros): "))
     sexo = input("Sexo (m/f): ").lower()
