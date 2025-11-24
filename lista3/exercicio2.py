@@ -1,9 +1,19 @@
+def desconto(qt, tt):
+    if qt <= 20:
+        return tt * 0.02
+    else:
+        return tt * 0.06
+
 nome = input("Qual o nome do produto: ")
-quantidade = int(input("Qual a quantidade que voce deseja adquirir?? "))
 preço_uni = float(input("Qual o preço unitario do produto?? "))
 
-total = quantidade * preço_uni
 
+while True:
+    quantidade = int(input("Digite a quantidade de (max. 50): "))
+    if quantidade <= 50:
+        break
+
+total = quantidade * preço_uni
 
 if quantidade <= 20 :
     desconto =  total * 0.2
